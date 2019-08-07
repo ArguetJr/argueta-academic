@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jaime Argueta's Academic Webpage </title>
+	</head>
+	<body>
+		<h1>Hello and Welcome!</h1>
+		<h4 id='date'></h4>
+	</body>
+</html>
