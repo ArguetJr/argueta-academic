@@ -1,0 +1,12 @@
+<NotepadPlus>
+    <Project name="index.html">
+        <File name="index.html" />
+        <File name="scheme.css" />
+        <Folder name="js">
+            <File name="js\test.js" />
+            <File name="js\tab.js" />
+        </Folder>
+        <File name="urban.jpg" />
+        <File name="about.html" />
+    </Project>
+</NotepadPlus>
