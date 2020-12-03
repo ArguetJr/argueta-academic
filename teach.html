@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaime Argueta's Academic Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="scheme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Headers -->
+
+<div class="header">
+	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>	
+</div>
+
+
+	
+<!-- Tab links -->
+
+<div class="topnav">
+	<form action = "pubs.html">
+		<button class="topnavlinks" onclick="openRef(event, 'Publications')">Publications</button>
+	</form>
+	<form action = "cw.html">	
+		<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
+	</form>
+		<form action = "https://www.notion.so/tiredcrimstudent">
+			<button class="topnavlinks" onclick="openRef(event, 'Blog')">Theory Blog</button>
+		</form>
+	<form action="presen.html">
+		<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
+	</form>
+	<form action="teach.html">
+		<button class="topnavlinks" onclick="openRef(event, 'Teaching')">Teaching</button>
+	</form>
+	<form action="about.html">
+		<button class="topnavlinks" onclick="openRef(event, 'About Me')">About Me</button>
+	</form>
+</div>
+
+
+<!-- Tab Content -->
+
+<div id="Publications" class ="tabcontent"></div>
+
+<div id="Current Works" class ="tabcontent"></div>
+
+<div id="Blog" class ="tabcontent"></div>
+
+<div id="Presentations" class ="tabcontent"></div>
+
+<div id="Teaching" class ="tabcontent"></div>
+
+<div id="About Me" class ="tabcontent"></div>
+
+<script src=".\js\tab.js"></script>
+
+
+<!-- Columns -->
+
+<!-- Tab Content -->
+
+<div id="Publications" class ="tabcontent"></div>
+
+<div id="Current Works" class ="tabcontent"></div>
+
+<div id="Blog" class ="tabcontent"></div>
+
+<div id="Presentations" class ="tabcontent"></div>
+
+<div id="Teaching" class ="tabcontent"></div>
+
+<div id="About Me" class ="tabcontent"></div>
+
+<script src=".\js\tab.js"></script>
+
+
+<!-- Stylizing -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+		
+		
+
+<ul>
+  	<li>
+	<div class="sidelink">
+		<a href="mailto:arguetjr@mail.uc.edu">Email</a><br>
+		<a href="https://orcid.org/0000-0001-7134-3949" class="w3-button w3-bar-item">ORCID</a>
+		</div><br>
+		<div class="sidelink">
+		<a href="https://github.com/ArguetJr" class="w3-button w3-bar-item">Github</a>
+	</div><br>
+	</li>
+</ul>
+
+
+
+
+
+
+<!-- Main Page-->
+	
+<main>
+	<div class = "border_ab">
+	<div class="c-header_ab">
+			<p>	My Courses </p> 
+    </div>
+    <div class="bullets">
+    	<p> The best teaching is done by allowing students to engage with concepts and discover new things organically. This teaches students to learn how to fail well and get comfortable in exploring their different opinion. I teach them to be comfortable with being wrong and expressing their mindset when exploring answers. My concept of failing grasps at the growth in mindset as it lets students actively engage in each other’s answers and express their knowledge.</p>
+
+    <h2 id="Current_works">Courses Taught:</h2>
+    <style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+</style>
+
+<table>
+  <tr>
+    <th>Course Level</th>
+    <th>Course Name</th>
+    <th>Syllabus</th>
+  </tr>
+  <tr>
+    <td>CJ 3504</td>
+    <td>Problem Solving in Policing</td>
+    <td><a href="POP_Spring21.pdf" download>Spring21_Syllabus</a></td>
+  </tr>
+  <tr>
+    <td>CJ 2050</td>
+    <td>Policing in America</td>
+    <td><a href="PIA_SyllabusSpring2021.pdf" download>Spring21_Syllabus</a></td>
+  </tr>
+  <tr>
+    <td>CJ 4077</td>
+    <td>Crime Prevention</td>
+    <td><a href="CJ4077-001_syllabusF2020 .pdf" download>Fall21_Syllabus</a></td>
+  </tr>
+</table>
+	</div>
+
+	
+
+</main>
+</body>
+</html>
