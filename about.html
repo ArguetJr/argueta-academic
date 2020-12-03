@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jaime Argueta's Academic Webpage</title>
+<title>About Jaime</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="scheme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+
 <!-- Headers -->
-
 <div class="header">
-	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>
-	<p>A website created for interested academics and practitioners</p>
-	
+	<h1><a href="index.html" class = "link"> Jaime Argueta's Academic Webpage </a></h1>
 </div>
 
 
-	
+
 <!-- Tab links -->
+	<div class="topnav">
+		<form action = "pubs.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Publications')">Publications</button>
+		</form>
+		<form action = "cw.html">	
+			<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
+		</form>
+		<form action = "https://www.notion.so/tiredcrimstudent">
+			<button class="topnavlinks" onclick="openRef(event, 'Blog')">Theory Blog</button>
+		</form>
+		<form action="presen.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
+		</form>
+		<form action="teach.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Teaching')">Teaching</button>
+		</form>
+		<form action="about.html">
+			<button class="topnavlinks" onclick="openRef(event, 'About Me')">About Me</button>
+		</form>
+	</div>	
 
-<div class="topnav">
-	<form action = "pubs.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Publications')">Publications</button>
-	</form>
-	<form action = "cw.html">	
-		<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
-	</form>
-	<form action = "cv.html">
-		<button class="topnavlinks" onclick="openRef(event, 'CV')">CV</button>
-	</form>
-	<form action="presen.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
-	</form>
-	<form action="teach.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Teaching')">Teaching</button>
-	</form>
-	<form action="about.html">
-		<button class="topnavlinks" onclick="openRef(event, 'About Me')">About Me</button>
-	</form>
-</div>
 
 <!-- Tab Content -->
 
@@ -47,7 +47,7 @@
 
 <div id="Current Works" class ="tabcontent"></div>
 
-<div id="CV" class ="tabcontent"></div>
+<div id="Blog" class ="tabcontent"></div>
 
 <div id="Presentations" class ="tabcontent"></div>
 
@@ -58,88 +58,91 @@
 <script src=".\js\tab.js"></script>
 
 
-<!-- Columns -->
 
-<div class="row">
+<!-- Stylizing -->
 
-	<!-- Side Tab -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
 
-	<div class="side">
-		<img src ="Headshot.jpeg" alt = "Headshot" width="200" height="300">
-		<p>Jaime R. Argueta, Jr.</p>
-		<address>
-		<p>Graduate Student </p>
-		<p>University of Cincinnati </p>
-		<p>School of Criminal Justice </p>
-		</address>
-		
-		<p class="small">
-		<strong>Phone:</strong>  407-733-5783<br>
-		<strong>Email:</strong>  <a href="mailto:arguetjr@mail.uc.edu">arguetjr</a><br>
-		</p>
-		
-		<p class="big">
-		<div class="sidelink">
-		<a href="https://scholar.google.com/citations?hl=en&user=3CX8cFkAAAAJ" class="w3-button w3-bar-item">Google Scholar</a><br>
-		</div><br>
-		<div class="sidelink">
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+			
+
+<ul>
+  	<li>
+	<div class="sidelink">
+		<a href="mailto:arguetjr@mail.uc.edu">Email</a><br>
 		<a href="https://orcid.org/0000-0001-7134-3949" class="w3-button w3-bar-item">ORCID</a>
 		</div><br>
 		<div class="sidelink">
 		<a href="https://github.com/ArguetJr" class="w3-button w3-bar-item">Github</a>
-		</div><br>
-		</p>
-	</div>
+	</div><br>
+	</li>
+</ul>
+
+
+
+
+<!-- Main Page-->
 	
-	<!-- Main Page to be Filled -->
-	
+
 <main>
-	 <div id="post-info">
-      <div id="info-container">
-        <h1 id="title" align="center">Who I Am</h1>
-      </div>
+	
+<div class = "border_ab">
+	<div class="c-header_ab">
+			<p><img src ="snap.jpg" alt = "snap" width = "350" height = "350" style="top:100px;" >
+			Who I Am?! </p> 
     </div>
-  
-  <div class="post">
-    <p><br />
-Hi! I'm Jaime ("Jay"), and I'm a second-year PhD candidate in Criminology at the Universty of Cincinnati's School of Criminal Justice. Currently my research interest is in the Concentration of Crime at Places. My other interests verge in communities, applied crime prevention, crime hot spots, and community effects. My self-taught skills in GIS and programming has allowed me to get a strong methodological background and explore a wide variety of interests.  </p>
 
-<h2 id="research-groups">Research groups:</h2>
 
-<ul>
-  <li><a href="https://www.theiacp.org/research-center-team">The Policing Center at the University of Cincinnati</a></li>
-</ul>
+    <div class="bullets">
+    	<p> As of August 2020, I have been a Ph.D. student studying Criminology at the University of Cincinnati for three years. I am now studying for comps and preparing to finish up with a dissertation topic select and publications being edited. </p>
 
-<h2 id="learned-societies">Societies:</h2>
+    <h2 id="Current_works">What I am Doing:</h2>
+    	<p>	1. I am currently working on publishing two papers. One deals with an algorithm for hot spots policing. The second deals with evaluating the effects of gentrification on juvenile homicide. Both of which are under the projects tab. </p>
+  		<p>	2. I continously write a blog on <a href="https://www.notion.so/tiredcrimstudent">criminological theories</a>. I mainly write for a undergraduate audience. However, it also serves the purpose of helping me explain theories better and learn about their histories!</p>
+  		<p>	3. Inbetween writing and studying, I try to teach myself and get better acquainted with python and sql. My goal is to eventually create simulated environments where custom crime events and patterns can be generated. </p>
+		
 
-<ul>
-  <li style="padding: 3px 0px;"><a href="https://www.theiacp.org/">IACP: INternational Association of Chiefs of Police</a> (Researcher)</li>
-  
-  
-  <li style="padding: 3px 0px;"><a href="https://www.asc41.com/">ASC: American Society of Criminology</a> (Member)</li>
-  
-  
-  <li style="padding: 3px 0px;"><a href="https://www.acjs.org/">ACJS: Academy of Criminal Justice Sciences</a> (Member)</li>
-</ul>
-
-<h2 id="qcs">Quantitative and Computer Skills:</h2>
-
-<ul>
-  <h4> Statistics </h4>
-	<li>Longitudinal Analysis, Data Mining & Database Management</li>
-  <h4> Programming</h4>
-	<li> HTML, Microsoft Access, MS-SQL, Python, R, Java, Google API </li>
-  <h4> Software </h4>
-  <li>ArcGIS, STATA, SPSS, R, LaTeX, Adobe Creative Suite</li>
-</ul>
-
-<p><br /></p>
-
-  </div>
+    <h2 id="Current_works">Other Stuff:</h2>
+    	<p>1. I dive deep into reading about historical places and buildings! Ask me about fun facts about gentrification or buildings and we can chat!</p>
+  		<p>2. I enjoy taking long motorcycle trips cross-country. This helps clear my mind and manage burnout!</p>
+  		<p>3. With COVID-19 making everything online, I try to keep all lectures recorded and online for free use! (Hopefully to come soon).</p>
+	</div>
 </div>
-	
-	
-</main>
-
 </body>
 </html>

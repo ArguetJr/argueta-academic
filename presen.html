@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jaime Argueta's Academic Webpage</title>
+<title>Presentations</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="scheme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!-- Headers -->
 
 <div class="header">
-	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>
-	<p>A website created for interested academics and practitioners</p>
-	
+	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>	
 </div>
 
 
@@ -27,9 +27,9 @@
 	<form action = "cw.html">	
 		<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
 	</form>
-	<form action = "cv.html">
-		<button class="topnavlinks" onclick="openRef(event, 'CV')">CV</button>
-	</form>
+		<form action = "https://www.notion.so/tiredcrimstudent">
+			<button class="topnavlinks" onclick="openRef(event, 'Blog')">Theory Blog</button>
+		</form>
 	<form action="presen.html">
 		<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
 	</form>
@@ -48,7 +48,7 @@
 
 <div id="Current Works" class ="tabcontent"></div>
 
-<div id="CV" class ="tabcontent"></div>
+<div id="Blog" class ="tabcontent"></div>
 
 <div id="Presentations" class ="tabcontent"></div>
 
@@ -61,73 +61,94 @@
 
 <!-- Columns -->
 
-<div class="row">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
 
-	<!-- Side Tab -->
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 5px;
+  text-decoration: none;
+}
 
-	<div class="side">
-		<img src ="Headshot.jpeg" alt = "Headshot" width="200" height="300">
-		<p>Jaime R. Argueta, Jr.</p>
-		<address>
-		<p>Graduate Student </p>
-		<p>University of Cincinnati </p>
-		<p>School of Criminal Justice </p>
-		</address>
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
 		
-		<p class="small">
-		<strong>Phone:</strong>  407-733-5783<br>
-		<strong>Email:</strong>  <a href="mailto:arguetjr@mail.uc.edu">arguetjr</a><br>
-		</p>
 		
-		<p class="big">
-		<div class="sidelink">
-		<a href="https://scholar.google.com/citations?hl=en&user=3CX8cFkAAAAJ" class="w3-button w3-bar-item">Google Scholar</a><br>
-		</div><br>
-		<div class="sidelink">
+
+<ul>
+  	<li>
+	<div class="sidelink">
+		<a href="mailto:arguetjr@mail.uc.edu">Email</a><br>
 		<a href="https://orcid.org/0000-0001-7134-3949" class="w3-button w3-bar-item">ORCID</a>
 		</div><br>
 		<div class="sidelink">
 		<a href="https://github.com/ArguetJr" class="w3-button w3-bar-item">Github</a>
-		</div><br>
-		</p>
-	</div>
+	</div><br>
+	</li>
+</ul>
+
 	
 	<!-- Main Page to be Filled -->
 	
 <main>
-	<div id="cpreseninfo">
-      <div id="info-container">
-        <h1 id="title" align ="center">Academic Presentations</h1>
-      </div>
-    </div>
-	<div class="post">
-    <h2 id="presen"></h2>
-<ul>
-	<li>
-  <p><b>Jr. Argueta, J.</b>, Eck, J.E., & Cullen, F. T. (2019) A Possible Cause of the Great Crime Rise: Urban Renewal’s Contribution to the Crime Rise of 1964-75, Abstract accepted for presentation at the American Society of Criminology (ASC), in San Francisco, California.</p>
-	</li>
-	<li>	
- <p>Discroll, C.,<b>Jr. Argueta, J.</b>, Haberman, C. & Manchak, S. (2019) Journey to Overdose: An Analyzation of Overdose Victims (ACJS) Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Baltimore, Maryland.</p>
-	<li>
- <p><b>Jr. Argueta, J.</b> & Haberman, C. (2018). Connecting the Lines: Connecting the Lines: A Comparison of Journey to Crime Distance Metrics, Abstract accepted for presentation at the American Society of Criminology (ASC), in Altana, Georgia.</p>
-	</li>
-	<li>
- <p>Merenda, F. & <b>Jr. Argueta, J.</b> (2017, March). Adventure -Based Therapy with At -Risk Youth: The Impact upon Self-confidence, Maturity, and Schooling. Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Kansas City, Missouri.</p>
-	</li>
-	<li>
- <p>Merenda, F. & <b>Jr. Argueta, J.</b>  (2017, April). Adventure -Based Therapy with At -Risk Youth: The Impact upon Self-confidence, Maturity, and Schooling. Abstract accepted for presentation at the Celebration of Undergraduate Research, Scholarship & Creative Activity (CURSCA), Marist College.</p>
-	</li>
-	<li>
- <p><b>Jr. Argueta, J.</b>, Conyers, A., Raines, J. (2016, March). Transient Crime: Law Enforcement Perspectives on Hot Spot Policing. Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Denver, Colorado.</p>
-	</li>
-	<li>
- <p><b>Jr. Argueta, J.</b>, Conyers, A., Raines, J. (2016, April). Transient Crime: Law Enforcement Perspectives on Hot Spot Policing. Abstract accepted for presentation at the Celebration of Undergraduate Research, Scholarship & Creative Activity (CURSCA), Marist College.</p>
-	</li>
-	<li>
- <p><b>Jr. Argueta, J.</b> (2015, July). Crime Analyst and Police Officers Perceptions of Hot Spot Policing. Abstract accepted for presentation at the North Eastern Academy of Criminal Justice Sciences (NEACJS) in Bristol, Rhode Island.</p>
-	</li>
-</ul>
-</main>
+	<div class = "border_ab">
+		<div class="c-header_ab">
+			<p> Academic Presentations</p>
+ 	   </div>
 
+<p><b>Jr. Argueta, J.</b>, Eck, J.E., & Cullen, F. T. (2019) A Possible Cause of the Great Crime Rise: Urban Renewal’s Contribution to the Crime Rise of 1964-75, Abstract accepted for presentation at the American Society of Criminology (ASC), in San Francisco, California.</p>
+
+	
+ <p>Discroll, C.,<b>Jr. Argueta, J.</b>, Haberman, C. & Manchak, S. (2019) Journey to Overdose: An Analyzation of Overdose Victims (ACJS) Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Baltimore, Maryland.</p>
+
+ <p><b>Jr. Argueta, J.</b> & Haberman, C. (2018). Connecting the Lines: Connecting the Lines: A Comparison of Journey to Crime Distance Metrics, Abstract accepted for presentation at the American Society of Criminology (ASC), in Altana, Georgia.</p>
+
+
+ <p>Merenda, F. & <b>Jr. Argueta, J.</b> (2017, March). Adventure -Based Therapy with At -Risk Youth: The Impact upon Self-confidence, Maturity, and Schooling. Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Kansas City, Missouri.</p>
+
+
+ <p>Merenda, F. & <b>Jr. Argueta, J.</b>  (2017, April). Adventure -Based Therapy with At -Risk Youth: The Impact upon Self-confidence, Maturity, and Schooling. Abstract accepted for presentation at the Celebration of Undergraduate Research, Scholarship & Creative Activity (CURSCA), Marist College.</p>
+
+
+ <p><b>Jr. Argueta, J.</b>, Conyers, A., Raines, J. (2016, March). Transient Crime: Law Enforcement Perspectives on Hot Spot Policing. Abstract accepted for presentation at the Academy of Criminal Justice Sciences (ACJS), in Denver, Colorado.</p>
+
+
+ <p><b>Jr. Argueta, J.</b>, Conyers, A., Raines, J. (2016, April). Transient Crime: Law Enforcement Perspectives on Hot Spot Policing. Abstract accepted for presentation at the Celebration of Undergraduate Research, Scholarship & Creative Activity (CURSCA), Marist College.</p>
+
+ <p><b>Jr. Argueta, J.</b> (2015, July). Crime Analyst and Police Officers Perceptions of Hot Spot Policing. Abstract accepted for presentation at the North Eastern Academy of Criminal Justice Sciences (NEACJS) in Bristol, Rhode Island.</p>
+
+	</div>
+
+
+
+</main>
 </body>
 </html>

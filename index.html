@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jaime Argueta's Academic Webpage</title>
+<title>Jaime's Homepage</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="scheme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-
-	
-	
-<!-- Headers-->
-
+<!-- Headers -->
 <div class="header">
-	<h2><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h2>
-	<img src ="signature.jpg" alt = "SIG" width="100" height="50">
-	
+	<h1><a href="index.html" class = "link"> Jaime Argueta's Academic Webpage </a></h1>
 </div>
 
 
-	
 <!-- Tab links -->
-<div class="topnav">
-	<form action = "pubs.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Publications')">Publications</button>
-	</form>
-	<form action = "cw.html">	
-		<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
-	</form>
-	<form action = "cv.html">
-		<button class="topnavlinks" onclick="openRef(event, 'CV')">CV</button>
-	</form>
-	<form action="presen.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
-	</form>
-	<form action="teach.html">
-		<button class="topnavlinks" onclick="openRef(event, 'Teaching')">Teaching</button>
-	</form>
-	<form action="about.html">
-		<button class="topnavlinks" onclick="openRef(event, 'About Me')">About Me</button>
-	</form>
-</div>
+	<div class="topnav">
+		<form action = "pubs.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Publications')">Publications</button>
+		</form>
+		<form action = "cw.html">	
+			<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
+		</form>
+		<form action = "https://www.notion.so/tiredcrimstudent">
+			<button class="topnavlinks" onclick="openRef(event, 'Blog')">Theory Blog</button>
+		</form>
+		<form action="presen.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
+		</form>
+		<form action="teach.html">
+			<button class="topnavlinks" onclick="openRef(event, 'Teaching')">Teaching</button>
+		</form>
+		<form action="about.html">
+			<button class="topnavlinks" onclick="openRef(event, 'About Me')">About Me</button>
+		</form>
+	</div>	
 
 
 <!-- Tab Content -->
@@ -50,7 +45,7 @@
 
 <div id="Current Works" class ="tabcontent"></div>
 
-<div id="CV" class ="tabcontent"></div>
+<div id="Blog" class ="tabcontent"></div>
 
 <div id="Presentations" class ="tabcontent"></div>
 
@@ -68,7 +63,7 @@
 	<!-- Side Tab -->
 
 	<div class="side">
-		<img src ="Headshot.jpeg" alt = "Headshot" width="200" height="300">
+		<img src ="Headshot.jpeg" alt = "Headshot" width="250" height="300">
 		<p>Jaime R. Argueta, Jr.</p>
 		<address>
 		<p>Graduate Student </p>
@@ -91,18 +86,23 @@
 		<div class="sidelink">
 		<a href="https://github.com/ArguetJr" class="w3-button w3-bar-item">Github</a>
 		</div><br>
-		</p>
 	</div>
 	
-	<!-- Main Page to be Filled -->
+<!-- Main Page-->
 	
 <main>
-	<img src ="urban.jpg" alt = "mc" class="center">
-	
-	
-	
-	
-</main>
+<div class = "border">
+	<div class="c-header">
+			<p> Welcome! </p>
+    </div>
+    <div class="pargs">
+    	<p> I'm Jaime. I am a Ph.D. student studying criminology with a focus on place and crime prevention. At the same time I am active motorcycle rider and hiker. I enjoy dabbling in the use and practicality of crime prevention tactics that may help researchers and individuals use these tools.  </p>
+	</div>
 
+	<img src ="urban.jpg" alt = "mc" height = "415">
+
+
+
+</main>
 </body>
 </html>

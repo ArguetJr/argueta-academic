@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jaime Argueta's Academic Webpage</title>
+<title>Current Works</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="scheme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!-- Headers -->
 
 <div class="header">
-	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>
-	<p>A website created for interested academics and practitioners</p>
-	
+	<h1><a href="index.html"; text-decoration: none; div class = "link">Welcome to Jaime Argueta's Academic Webpage</a></h1>	
 </div>
 
 
@@ -27,8 +27,8 @@
 	<form action = "cw.html">	
 		<button class="topnavlinks" onclick="openRef(event, 'Current Works')">Current Works</button>
 	</form>
-	<form action = "cv.html">
-		<button class="topnavlinks" onclick="openRef(event, 'CV')">CV</button>
+	<form action = "https://www.notion.so/tiredcrimstudent">
+		<button class="topnavlinks" onclick="openRef(event, 'Blog')">Theory Blog</button>
 	</form>
 	<form action="presen.html">
 		<button class="topnavlinks" onclick="openRef(event, 'Presentations')">Presentations</button>
@@ -48,7 +48,7 @@
 
 <div id="Current Works" class ="tabcontent"></div>
 
-<div id="CV" class ="tabcontent"></div>
+<div id="Blog" class ="tabcontent"></div>
 
 <div id="Presentations" class ="tabcontent"></div>
 
@@ -59,66 +59,115 @@
 <script src=".\js\tab.js"></script>
 
 
-<!-- Columns -->
 
-<div class="row">
 
-	<!-- Side Tab -->
+<!-- Tab Content -->
 
-	<div class="side">
-		<img src ="Headshot.jpeg" alt = "Headshot" width="200" height="300">
-		<p>Jaime R. Argueta, Jr.</p>
-		<address>
-		<p>Graduate Student </p>
-		<p>University of Cincinnati </p>
-		<p>School of Criminal Justice </p>
-		</address>
+<div id="Publications" class ="tabcontent"></div>
+
+<div id="Current Works" class ="tabcontent"></div>
+
+<div id="Blog" class ="tabcontent"></div>
+
+<div id="Presentations" class ="tabcontent"></div>
+
+<div id="Teaching" class ="tabcontent"></div>
+
+<div id="About Me" class ="tabcontent"></div>
+
+<script src=".\js\tab.js"></script>
+
+
+<!-- Stylzing-->
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
 		
-		<p class="small">
-		<strong>Phone:</strong>  407-733-5783<br>
-		<strong>Email:</strong>  <a href="mailto:arguetjr@mail.uc.edu">arguetjr</a><br>
-		</p>
 		
-		<p class="big">
-		<div class="sidelink">
-		<a href="https://scholar.google.com/citations?hl=en&user=3CX8cFkAAAAJ" class="w3-button w3-bar-item">Google Scholar</a><br>
-		</div><br>
-		<div class="sidelink">
+
+<ul>
+  	<li>
+	<div class="sidelink">
+		<a href="mailto:arguetjr@mail.uc.edu">Email</a><br>
 		<a href="https://orcid.org/0000-0001-7134-3949" class="w3-button w3-bar-item">ORCID</a>
 		</div><br>
 		<div class="sidelink">
 		<a href="https://github.com/ArguetJr" class="w3-button w3-bar-item">Github</a>
-		</div><br>
-		</p>
-	</div>
-	
-	<!-- Main Page to be Filled -->
+	</div><br>
+	</li>
+</ul>
+
+
+
+<!-- Main Page-->
 	
 <main>
-	<div id="cw-info">
-      <div id="info-container">
-        <h1 id="title" align ="center">Works in Progress</h1>
-      </div>
-    </div>
-    <div class="post">
-    <h2 id="journal-papers-and-preprints"></h2>
-<ul>
-	<li>
-		<p><b>Jr. Argueta, J.</b> & Eck, J. E. “Landlords and Crime: Measuring the Distance between ownership and residences.”</p>
-	</li>
-	<li>
-		<p><b>Jr. Argueta, J.</b> ---- “Gentrification and Its Effects on Juvenile Homicides.”</p>
-	</li>
-	<li>
-		<p><b>Jr. Argueta, J.</b> & Eck, J. E. “Finances, Decisions, Investments, and Control: An Assessment of Landlords Financial Investments.”</p>
-	</li>
-	<li>
-		<p><b>Jr. Argueta, J.</b>, Eck J.E., & Cullen F. T. “Destruction of the Future: Urban Renewal’s Contribution to the Great Crime Rise of the 1960s.”</p>
-	</li>
+	<div class = "border_ab">
+		<div class="c-header_ab">
+			<p> Current Projects</p>
+ 	   </div>
+ 	</div>
+<div class="post">
+	<div class = "border_pub">
+	<div class="c-header_pub">
+	   	<div class="apa">
 
-</ul>
-	
-	
+	   		<p> <span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Gentrification and Its Effects on Juvenile Homicides.”</p>
+
+	   		<h3> Preview </h3> <img src ="gent_map.jpg" alt = "mc" height = "415">
+    		
+			<p> <span style="font-weight: bold">Jr. Argueta, J.</span>, Eck J.E., & Cullen F. T. “Destruction of the Future: Urban Renewal’s Contribution to the Great Crime Rise of the 1960s.”</p>
+
+			<h3> Preview </h3> <img src ="urban_ren.jpg" alt = "mc" height = "415">
+
+
+		<h2> Benched </h2>	
+		<p><span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Landlords and Crime: Measuring the Distance between ownership and residences.”</p>
+
+		
+		<p><span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Finances, Decisions, Investments, and Control: An Assessment of Landlords Financial Investments.”</p>
+
+		</div>
+	</div>
+	</div>
+</div>
 	
 </main>
 
