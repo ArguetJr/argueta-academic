@@ -1,0 +1,147 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Works</title>
+  <link rel="stylesheet" href="sc2.css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+ 
+</head>
+<body>
+<div class="container">
+  <input data-function="swipe" id="swipe" type="checkbox">
+  <label data-function="swipe" for="swipe">&#xf057;</label>
+  <label data-function="swipe" for="swipe">&#xf0c9;</label>
+
+
+<!-- Main Page-->
+	
+ <div class="headings">
+			<h1> Current Projects</h1>
+
+	   
+
+	   		<p> <span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Gentrification and Its Effects on Juvenile Homicides.”</p>
+
+	 <h3 style="text-align:center"> Preview </h3>
+
+        <img id="gentmap" alt= "Gentrified Tracts in Cook County Throughout the Decades" src="gent.jpg" class="center" style="width:100%;max-width:300px">
+   
+				<!-- The Modal -->
+				<div id="gentModal" class="modal">
+
+				  <!-- The Close Button -->
+				  <span class="close1">&times;</span>
+
+				  <!-- Modal Content (The Image) -->
+				  <img class="modal-content" id="img02">
+
+				  <!-- Modal Caption (Image Text) -->
+				  <div id="caption1"></div>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById("gentModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("gentmap");
+				var modalImg = document.getElementById("img02");
+				var captionText = document.getElementById("caption1");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close1")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+				</script>
+
+
+
+
+
+    		
+			<p> <span style="font-weight: bold">Jr. Argueta, J.</span>, Eck J.E., & Cullen F. T. “Destruction of the Future: Urban Renewal’s Contribution to the Great Crime Rise of the 1960s.”</p>
+
+	<h3 style="text-align:center"> Preview </h3> 
+        <img id="urbanrn" alt= "Immediate Effects of Urban Renewal on Homicides. Only Urban Renewal Expenditures is statistically signficiant." src ="urban_ren.jpg" class="center" style="width:100%;max-width:300px">
+   
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+				  <!-- The Close Button -->
+				  <span class="close">&times;</span>
+
+				  <!-- Modal Content (The Image) -->
+				  <img class="modal-content" id="img01">
+
+				  <!-- Modal Caption (Image Text) -->
+				  <div id="caption"></div>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("urbanrn");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+				</script>
+
+
+
+
+		<h2> Benched </h2>	
+			<h3><span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Landlords and Crime: Measuring the Distance between ownership and residences.”</h3>
+
+		
+			<h3><span style="font-weight: bold">Jr. Argueta, J.</span> & Eck, J. E. “Finances, Decisions, Investments, and Control: An Assessment of Landlords Financial Investments.”</h3>
+
+	
+</div>
+	
+
+
+
+
+  <div class="sidebar">
+    <nav class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pubs.html">Publications</a></li>
+      <li><a href="cw.html">Current Works</a></li>
+      <li><a href="teach.html">Teaching</a></li>
+      <li><a href="https://www.notion.so/tiredcrimstudent/Getting-Started-747efca38af348568fc699ce61d8442e">Blog</a></li>
+      <li><a href="presen.html">Presentations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </nav>
+  </div>
+</div>
+
+
+</body>
+</html>
